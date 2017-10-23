@@ -1,7 +1,7 @@
 /usr/local/bin/bosh int manifests/kubo.yml \
      -o manifests/ops-files/master-haproxy-vsphere.yml \
      -o manifests/ops-files/worker-haproxy.yml \
-     -v deployments_network=DPortGroup-VM-3 \
+     -v deployments_network=KUBO-PG-3 \
      -v kubo-admin-password="VMware1!" \
      -v kubelet-password="VMware1!" \
      -v kubernetes_master_port=443 \

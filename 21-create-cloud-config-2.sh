@@ -6,7 +6,7 @@
 -v internal_ip=10.20.20.1 \
 -v kubernetes_master_host=10.40.207.23 \
 -v reserved_ips=[10.40.207.1-10.40.207.22,10.40.207.38-10.40.207.254] \
--v network_name=DPortGroup-VM-2 \
--v deployments_network=DPortGroup-VM-2 \
+-v network_name=KUBO-PG-2 \
+-v deployments_network=KUBO-PG-2 \
 -v vcenter_cluster=COMP-Cluster-1 \
 -v vcenter_rp="KuBo-K8S-2" > mycloudconfig-2.yml
