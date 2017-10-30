@@ -1,0 +1,15 @@
+- type: replace
+  path: /instance_groups/name=master/jobs/name=cloud-provider/properties/cloud-provider?
+  value: &vsphere_cloud_provider
+   type: vsphere
+   vsphere:
+     user: 'administrator@vsphere.local'
+     password: 'VMware1!'
+     server: '10.40.206.61'
+     insecure-flag: 1
+     datacenter: 'Datacenter'
+     datastore: 'NFS-LAB-DATASTORE'
+     working-dir: '/Datacenter/vm/kubobosh-vms'
+- type: replace
+  path: /instance_groups/name=worker/jobs/name=cloud-provider/properties/cloud-provider?
+  value: *vsphere_cloud_provider

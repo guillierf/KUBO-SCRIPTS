@@ -6,7 +6,7 @@ credhub login -u credhub-cli -p "${credhub_user_password}" -s "${credhub_api_url
 
 
 bosh int <(credhub get -n "/kubobosh/mykubocluster-1/tls-kubernetes" --output-json) --path=/value/ca > mykubecert.crt
-endpoint="10.40.207.40"
+endpoint="10.40.207.46"
 port="443"
 address="https://${endpoint}:${port}"
 admin_password="VMware1!"
